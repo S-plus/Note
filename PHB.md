@@ -62,7 +62,7 @@ Python setup.py install
 Import django
 django.VERSION
 ```
-如果有版本号出来说明Django安装成功
+如果有版本号出来说明Django安装成功</br>
 设置软连接
 ```
 ln –s /(python安装目录)/lib/python3.6/site-packages/Django-2.0.3-y3.6.egg/django/bin/django-admin.py /usr/local/bin
@@ -75,4 +75,28 @@ django-admin.py startproject (项目名称)
 ```
 python manage.py runserver 
 ```
-打开服务器浏览器输入127.0.0.1:8000测试是否成功
+打开服务器浏览器输入127.0.0.1:8000测试是否成功  
+修改app`settings.py`文件中的`ALLOWED_HOSTS = ['*']`  
+### 修改防火墙配置  
+查看防火墙状态  
+```
+firewall-cmd --state
+```
+开放端口
+```
+firewall-cmd --zone=public --add-port=(所需的端口)/tcp --permanent  //--permanent永久生效，没有此参数重启后失效
+```
+重新载入
+```
+firewall-cmd --reload
+```
+查看开放的端口  
+```
+firewall-cmd --zone=public --list-ports
+```
+到项目目录下启动服务
+```
+python manage.py 0.0.0.0:(端口)
+```
+在服务器下的终端浏览器上输入服务器及开放的端口进行测试
+
