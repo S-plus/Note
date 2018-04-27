@@ -2,7 +2,7 @@
 ## 开发环境
     1．内网状态
     2．CentOS-7-x86_64-Everything-1708（以下简称CentOS）
-    3. Python3.6.4（以下简称Python3）
+    3. Python3.6.4（以下简称Python）
     4．Django2.0.3（无特殊说明时以下简称Django）
     5．Httpd-2.4.6-67.el7.centos.x86_64(为CentOS7系统自带)
     6．Mysql
