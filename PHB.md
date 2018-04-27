@@ -96,7 +96,7 @@ firewall-cmd --zone=public --list-ports
 ```
 到项目目录下启动服务
 ```
-python manage.py 0.0.0.0:(端口)
+python manage.py 0:(端口)
 ```
 在服务器下的终端浏览器上输入服务器及开放的端口进行测试
 
