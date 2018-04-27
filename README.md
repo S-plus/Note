@@ -46,14 +46,14 @@ ln –s /(python安装目录)/bin/python3 /usr/bin/python
 ```
 vi /usr/bin/yum
 ```
-把'#! /usr/bin/python' 修改为 '#! /usr/bin/python2'
-同理' vi /usr/libexec/urlgrabber-ext-down '文件里的 '#! /usr/bin/python' 也要改为'#! /user/bin/python2'
+把`#! /usr/bin/python` 修改为 `#! /usr/bin/python2`
+同理` vi /usr/libexec/urlgrabber-ext-down `文件里的 `#! /usr/bin/python` 也要改为`#! /user/bin/python2`
 ### Django安装
 参考资料：</br>
 http://blog.csdn.net/zhengwei125/article/details/65443959</br>
 http://blog.csdn.net/darongzi1314/article/details/78413455
 
-安装前先安装pytz运行库，注：建议下载tar.gz格式解压后使用'python setup.py install'
+安装前先安装pytz运行库，注：建议下载tar.gz格式解压后使用`python setup.py install`
 ```
 Python setup.py install
 ```
