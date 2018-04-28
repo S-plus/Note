@@ -1,4 +1,4 @@
-# 记录系统开发
+# 内网环境部署CentOS7+Python3+Django2
 ## 开发环境
     1．内网状态
     2．CentOS-7-x86_64-Everything-1708（以下简称CentOS）
